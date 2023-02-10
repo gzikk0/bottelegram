@@ -1,3 +1,4 @@
+exit()
 import os
 try:
     import telebot
