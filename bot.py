@@ -21,7 +21,7 @@ L=0
 c =0
 m =0
 today = date.today()
-token ='5889667336:AAEyOagkF3F6702iJSDoZ9AxkVgLYwUvyGE'
+token =str(input('Enter Your Token BOT : '))
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start(message):
