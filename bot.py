@@ -1,7 +1,8 @@
 import os
 try:
+    import telebot
+except ImportError as error:
     os.system('pip install pyTelegramBotAPI')
-except:
     print('install done..')
     exit()
     
@@ -21,7 +22,7 @@ L=0
 c =0
 m =0
 today = date.today()
-token =str(input('Enter Your Token BOT : '))
+token =input('Enter Your Token Bot : ')
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start(message):
